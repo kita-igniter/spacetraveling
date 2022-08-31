@@ -1,0 +1,47 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-decoration: none;
+  color: var(--info);
+  h1 {
+    padding-bottom: 5px;
+    font-size: 1.75rem;
+  }
+  span {
+    font-size: 1.125rem;
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    div {
+      svg {
+        margin-right: 5px;
+        font-size: 0.93rem;
+      }
+      span {
+        color: var(--info);
+      }
+      span {
+        font-size: 0.875rem;
+      }
+    }
+  }
+  &+.post {
+    padding-top: 50px;
+  }
+}
+
+.moreposts {
+  padding-top: 65px;
+  font-size: 1.125rem;
+  color: var(--highlight);
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
